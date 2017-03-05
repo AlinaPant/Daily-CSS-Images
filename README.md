@@ -1,6 +1,6 @@
 # [Daily CSS Images](http://challenges.codingartist.io/) challenge.
 
-Own collection on the [Codepen](http://codepen.io/collection/XzKPBR/).
+[Own collection on the Codepen](http://codepen.io/collection/XzKPBR/).
 
 Aslo you can check out in:
   * [Twitter](https://twitter.com/search?q=%23dailycssimages&src=tyah) with the hashtag #dailycssimages.
