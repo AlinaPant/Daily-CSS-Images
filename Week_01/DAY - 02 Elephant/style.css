@@ -1,0 +1,130 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #7c5b62;
+}
+
+.text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: monospace;
+	font-size: 24px;
+	line-height: 40px;
+	color: #878083;
+	padding: 20px;
+	transition: opacity .6s linear;
+	opacity: 0;
+}
+
+.elephant {
+	width: 460px;
+	height: 320px;
+}
+
+.crown {
+	position: relative;
+	top: 8px;
+	width: 66px;
+	height: 26px;
+	background: 
+		linear-gradient(135deg, #7c5b62 25%, transparent 25%) 0px 0,
+		linear-gradient(225deg, #7c5b62 25%, transparent 25%) 0px 0;
+	background-repeat: repeat-x;
+	background-color: #996666;
+	margin: auto;
+	z-index: 2;
+}
+
+.crown::before {
+	content: "";
+	position: absolute;
+	top: -16px;
+	left: 23px;
+	width: 20px;
+	height: 20px;
+	background: repeating-linear-gradient(45deg, #878083, #878083 15%, #996699 15%, #996699 25%);
+	border-radius: 50%;
+}
+
+.face {
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	background: #878083;
+	border-radius: 50%;
+	border: 1px solid #7c5b62;
+	box-sizing: border-box;
+	z-index: 1;
+}
+
+.ear_left,
+.ear_right {
+	position: relative;
+	top: 10px;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	background: #878083;
+}
+
+.ear_left {
+	left: 45px;
+	border-radius: 40% 20%;
+	transform: rotate(10deg);
+}
+
+.ear_right {
+	left: -45px;
+	border-radius: 20% 40%;
+	transform: rotate(-10deg);
+}
+
+.eye {
+	position: relative;
+	top: 48px;
+	left: 45px;
+	width: 7px;
+	height: 9px;
+	background: #7c5b62;
+	border-radius: 50%;
+	box-shadow:
+		0 0 0 4px #efefef,
+		55px 0 0 #7c5b62,
+		55px 0 0 4px #efefef;
+}
+
+.nose {
+	position: relative;
+	left: calc(50% - 14px);
+	bottom: -90px;
+	width: 29px;
+	height: 100px;
+	background: #878083;
+	border: 1px solid #7c5b62;
+	border-top-color: transparent;
+}
+
+.nose::before {
+	content: "";
+	position: absolute;
+	left: calc(50% - 15px);
+	bottom: -40px;
+	width: 29px;
+	height: 29px;
+	border-radius: 50%;
+	border: 29px solid #878083;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	transform: rotate(-45deg);
+}
+
+@media  (max-width: 458px) {
+	.text {
+		opacity: 1;
+		transition: opacity .6s linear;
+	}
+}
