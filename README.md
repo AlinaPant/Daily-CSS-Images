@@ -1,4 +1,4 @@
-# [Daily CSS Images](http://challenges.codingartist.io/) challenge.
+  # [Daily CSS Images](http://challenges.codingartist.io/) challenge.
 
 [Own collection on the Codepen](http://codepen.io/collection/XzKPBR/).
 
